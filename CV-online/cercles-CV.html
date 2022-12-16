@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imgs-cercles\styles-cercles-CV.css">
+    <title>Cercles</title>
+</head>
+
+<body>
+    <div id="skills">
+        <input class="radioBtns" type="radio" id="cercleI" onchange="changeBackg()">
+        <label for="cercleI" id="dev">
+            <svg class="cercles" id="cercle1" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#939F5C" />
+            </svg>
+        </label>
+        <div class="skills_dev_txts">
+            <h2>Informatique</h2>
+            <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
+            <p>React JS, Node JS, Bootstrap</p>
+            <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
+            <p>Logiciels bureautiques : pack Office</p>
+            <p>Wordpress</p>
+            <a href="#" onclick=changeBackgBack()>X</a>
+        </div>
+        <div class="bg-blur"></div>
+        <input class="radioBtns" type="radio" id="cercleII">
+        <label for="cercleII" id="exp">
+            <svg class="cercles" id="cercle2" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#FFBA49" />
+            </svg>
+        </label>
+        <input class="radioBtns" type="radio" id="cercleIII">
+        <label for="cercleIII" id="languages">
+            <svg class="cercles" id="cercle3" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#939F5C" />
+            </svg>
+        </label>
+        <input class="radioBtns" type="radio" id="cercleVI">
+        <label for="cercleVI" id="softSk">
+            <svg class="cercles" id="cercle4" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#FFBA49" />
+            </svg>
+        </label>
+    </div>
+</body>
+
+</html>
+<script>
+    function changeBackg() {
+        document.querySelector("body").style.cssText = 'background-color:pink;overflow:hidden';
+        document.querySelector("#skills").className += 'blurry';
+    }
+    function changeBackgBack() {
+        document.querySelector("#skills").removeAttribute('class');
+        document.querySelector("body").style.cssText = 'background-color:none;overflow-y:scroll';
+        let inputs = document.querySelectorAll('.radioBtns');
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].checked = false;
+        }
+    }
+</script>
