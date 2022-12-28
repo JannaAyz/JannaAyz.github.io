@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="multimedia-CV/Chore/stylesCV.css">
+    <link rel="icon" type="image/x-icon" href="multimedia-CV/favicon-J.png" width="1000%">
+    <title>Jeanne Ayzatova</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="multimedia-CV/logo-jeanne.svg" alt="logo-Jeanne-Ayzatova">
+            <ul>
+                <li><a href="#part2">Parcours</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+            <button>Projets</button>
+        </nav>
+        <section id="part1">
+            <!-- fleurs ici -->
+            <h1>Développeuse web et mobile full-stack junior </h1>
+            <p>CSS, HTML, JS, PHP... frameworks tels que React ou Angular ainsi que les logiciels PAO sont les outils
+                avec lesquels je travaille, dans le but de créer des interfaces web et mobile, avec la prise en compte
+                de la SEO, de l'accessibilité et de la maintenabilité côté client. </p>
+            <p>Fin 2021, j'ai découvert le développement et commencé à me spécialiser dans la création digitale de
+                manière intensive.</p>
+            <p>J'aime oeuvrer dans la création d'interfaces adaptables, intuitives, intelligentes de part leur code et
+                leur design, en m'améliorant constamment dans la proposition de solutions informatiques face à des
+                enjeux différents. </p>
+            <!-- ou ici -->
+            <!-- <img id="part1_pattern" src="" alt="flower-web-pattern"> -->
+        </section>
+    </header>
+    <!-- fleurs ici -->
+    <section id="part2">
+        <div id="book">
+            <div id="visible">
+                <h2>Parcours académique</h2>
+                <h3 class="descriptionCV1 delay1">Developpeur web et mobile, Konexio, Paris</h3>
+                <p class="descriptionCV2 delay2">2020-2022<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at
+                    quidem
+                    maxime voluptas laborum ratione unde dolore molestiae excepturi quaerat atque in, dolorum, doloribus
+                    consectetur. Voluptatum perspiciatis iure, saepe distinctio cum in officiis qui nihil. Distinctio
+                    officiis
+                    sit iste expedita!</p>
+                <h3 class="descriptionCV3 delay3">Webdesigner, La Manu, Versailles</h3>
+                <p class="descriptionCV4 delay4">2020-2022<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at
+                    quidem
+                    maxime voluptas laborum ratione unde dolore molestiae excepturi quaerat atque in, dolorum, doloribus
+                    consectetur. Voluptatum perspiciatis iure, saepe distinctio cum in officiis qui nihil. Distinctio
+                    officiis
+                    sit iste expedita!</p>
+                <h3 class="descriptionCV5 delay5">Master Japonais, Paris Diderot</h3>
+                <p class="descriptionCV6 delay6">2020-2022<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at
+                    quidem
+                    maxime voluptas laborum ratione unde dolore molestiae excepturi quaerat atque in, dolorum, doloribus
+                    consectetur. Voluptatum perspiciatis iure, saepe distinctio cum in officiis qui nihil. Distinctio
+                    officiis
+                    sit iste expedita!</p>
+            </div>
+            <div id="visible2">
+                <h2>Parcours professionnel</h2>
+                <h3 class="descriptionCV1 delay1">Hotesse d'accueil, Ulysse, Paris</h3>
+                <p class="descriptionCV2 delay2">2020-2022<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at
+                    quidem
+                    maxime voluptas laborum ratione unde dolore molestiae excepturi quaerat atque in, dolorum, doloribus
+                    consectetur. Voluptatum perspiciatis iure, saepe distinctio cum in officiis qui nihil. Distinctio
+                    officiis
+                    sit iste expedita!</p>
+                <h3 class="descriptionCV3 delay3">Cours particuliers, Paris</h3>
+                <p class="descriptionCV4 delay4">2020-2022<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at
+                    quidem
+                    maxime voluptas laborum ratione unde dolore molestiae excepturi quaerat atque in, dolorum, doloribus
+                    consectetur. Voluptatum perspiciatis iure, saepe distinctio cum in officiis qui nihil. Distinctio
+                    officiis
+                    sit iste expedita!</p>
+                <h3 class="descriptionCV5 delay5">Assistante de direction trilinge, Argenteuil</h3>
+                <p class="descriptionCV6 delay6">2020-2022<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at
+                    quidem
+                    maxime voluptas laborum ratione unde dolore molestiae excepturi quaerat atque in, dolorum, doloribus
+                    consectetur. Voluptatum perspiciatis iure, saepe distinctio cum in officiis qui nihil. Distinctio
+                    officiis
+                    sit iste expedita!</p>
+            </div>
+            <div class="turnPageButton">
+                <img src="multimedia-CV/arrowNext.svg"  alt="arrow-next" id="next" onclick="nextPageCall()">
+                <img src="multimedia-CV/arrowPrevious.svg"  alt="arrow-previous" id="previous"
+                    onclick="previousPage()">
+            </div>
+        </div>
+    </section>
+    <!-- <section id="part3"> -->
+    <div id="skills">
+        <input class="radioBtns" type="radio" id="cercleI" onchange="changeBackg()">
+        <label for="cercleI" id="dev">
+            <img class="leftCorner" src="multimedia-CV\open-tag.png" alt="">
+            <img class="middle" src="multimedia-CV\slash.png" alt="" style="width:4%;">
+            <img class="rightCorner" src="multimedia-CV\close-tag.png" alt="">
+            <svg class="cercles" id="cercle1" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#939F5C" />
+            </svg>
+        </label>
+        <div class="skills_dev_txts">
+            <a onclick=changeBackgBack() style="color:black;">X</a>
+            <h2>Informatique</h2>
+            <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
+            <p>React JS, Node JS, Bootstrap</p>
+            <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
+            <p>Logiciels bureautiques : pack Office</p>
+            <p>Wordpress</p>
+        </div>
+        <input class="radioBtns" type="radio" id="cercleII" onchange="changeBackg()">
+        <label for="cercleII" id="exp">
+            <img id="points" class="middle" src="multimedia-CV\points-jp.png" alt="">
+            <svg class="cercles" id="cercle2" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#FFBA49" />
+            </svg>
+        </label>
+        <div class="skills_dev_txts">
+            <a onclick=changeBackgBack() style="color:black;">X</a>
+            <h2>Informatique</h2>
+            <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
+            <p>React JS, Node JS, Bootstrap</p>
+            <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
+            <p>Logiciels bureautiques : pack Office</p>
+            <p>Wordpress</p>
+        </div>
+        <input class="radioBtns" type="radio" id="cercleIII" onchange="changeBackg()">
+        <label for="cercleIII" id="languages">
+            <img class="leftCorner jp_fr_skills" src="multimedia-CV\Jp.png" alt="">
+            <img class="rightCorner jp_fr_skills" src="multimedia-CV\Fr.png" alt="">
+            <svg class="cercles" id="cercle3" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#939F5C" />
+            </svg>
+        </label>
+        <div class="skills_dev_txts">
+            <a onclick=changeBackgBack() style="color:black;">X</a>
+            <h2>Informatique</h2>
+            <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
+            <p>React JS, Node JS, Bootstrap</p>
+            <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
+            <p>Logiciels bureautiques : pack Office</p>
+            <p>Wordpress</p>
+        </div>
+        <input class="radioBtns" type="radio" id="cercleVI" onchange="changeBackg()">
+        <label for="cercleVI" id="softSk">
+            <img class="leftCorner jp_fr_skills bigger" src="multimedia-CV\soft.png" alt="">
+            <img class="rightCorner jp_fr_skills bigger" src="multimedia-CV\skills.png" alt="">
+            <svg class="cercles" id="cercle4" height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke-width="0" fill="#FFBA49" />
+            </svg>
+        </label>
+        <div class="skills_dev_txts">
+            <a onclick=changeBackgBack() style="color:black;">X</a>
+            <h2>Informatique</h2>
+            <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
+            <p>React JS, Node JS, Bootstrap</p>
+            <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
+            <p>Logiciels bureautiques : pack Office</p>
+            <p>Wordpress</p>
+        </div>
+    </div>
+    <!-- </section> -->
+    <footer></footer>
+
+    <script>
+        //General functions
+        function hide(elmnt) {
+            elmnt.style = "display:none;";
+        }
+        function show(elmnt) {
+            // if(elmnt.classList.contains("scdown")) {
+            elmnt.style.cssText = "display:block;";
+            // }
+        }
+        function scrollDown(elmnt) {
+            elmnt.className += "scdown";
+        }
+        function turnPage(elmnt) {
+            elmnt.className += "turn";
+        }
+        function noClass() {
+            aca.removeAttribute('class');
+            pro.removeAttribute('class');
+        }
+        //Select DOM elements
+        let btnNext = document.getElementById('next');
+        let btnPrev = document.getElementById('previous');
+        let aca = document.getElementById('visible');
+        let pro = document.getElementById('visible2');
+
+        //General function. Texts animated to switch between them
+        function nextPage(firstPage, nxtPage, btnNxt, btnBack) {
+            turnPage(firstPage);
+            setTimeout(() => {
+                setTimeout(hide(firstPage), 200);
+                setTimeout(scrollDown(nxtPage), 10);
+                setTimeout(show(nxtPage), 1800);
+            }, 2000);
+            hide(btnNxt);
+            show(btnBack);
+        }
+        //Call the text animation, from the first to the second one
+        function nextPageCall() {
+            document.querySelector("body > header > nav > ul > li:nth-child(1) > a").click();
+            noClass();
+            setTimeout(() => {
+                nextPage(aca, pro, btnNext, btnPrev);
+            }, 10);
+        }
+        //Call the text animation, from the second to the first one
+        function previousPage() {
+            document.querySelector("body > header > nav > ul > li:nth-child(1) > a").click();
+            noClass();
+            setTimeout(nextPage(pro, aca, btnPrev, btnNext), 10);
+        }
+        window.addEventListener('scroll', () => {
+            const { scrollTop, clientHeight } = document.documentElement;
+            console.log(scrollTop, clientHeight);
+        });
+        //ANIMATE CERCLES
+        let skillsPart = document.querySelector("#skills"),
+            part2 = document.querySelector("#part2"),
+            part1 = document.querySelector("#part1"),
+            labelImgs = document.querySelectorAll('#skills  label > img');
+        // leftCorners = document.querySelectorAll('label:hover > .leftCorner'),
+        // rightCorners = document.querySelectorAll('label:hover > .rightCorner');
+        // hide(labelImgs)
+        // leftCorners.style = "display:none";
+        // let checkedElement = document.querySelector(':checked');
+        // function eraseImgs() {
+            
+        //     if(checkedElement.checked == true) {
+        //         hide(labelImgs);
+        //         console.log('jnjn')
+        //     }
+        // }
+        // document.querySelector('#skills').addEventListener('click', eraseImgs); 
+
+        
+
+
+        function changeBackg() {
+           
+            checkedElement = document.querySelector(':checked');
+            
+            
+            function coche(callback) {
+                checkedElement.checked = true;
+                setTimeout(callback(), 510);
+                console.log('hello');
+            }
+            function scrollToSkills() {
+                document.querySelector("#skills").scrollIntoView({ behavior: 'auto' });
+            }
+            // setTimeout(() => {
+            coche(scrollToSkills);
+
+            setTimeout(() => {
+                document.querySelector("#skills").classList.add('blurry');
+                part2.style = 'z-index:-1;opacity: .05';
+                coche();
+            }, 520);
+            setTimeout(() => {
+                window.addEventListener('scroll', () => {
+                    const { scrollTop, clientHeight } = document.documentElement;
+                    if (scrollTop <= 1380) {
+                        changeBackgBack();
+                    }
+                })
+            }, 1500);
+        }
+        function changeBackgBack() {
+            part2.style = 'opacity:1';
+            skillsPart.classList.remove('blurry');
+            checkedElement.checked = false;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
