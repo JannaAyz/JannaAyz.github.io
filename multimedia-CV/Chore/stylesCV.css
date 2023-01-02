@@ -128,7 +128,7 @@ input[type=checkbox]{
 }
 #part1 {
     background-color: #A22C29;
-    height: clamp(480px, 60vh, 1000px);
+    height: clamp(500px, 75vh, 1000px);
     color: white;
     position: relative;
     z-index: 1;
@@ -181,6 +181,7 @@ p:not(p.leftCorner, p.rightCorner) {
 
 #part1 p {
     font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(14px, 3vw, 20px);
     margin-left: 0;
 }
 
@@ -343,14 +344,12 @@ h3 {
 .radioBtns~.skills_dev_txts,
 p.skills_dev_txts {
     padding: 30px;
-    /* padding-top: 0px; */
     background-color: white;
     border-radius: 5px;
     margin-top: min(50px, 180px);
     display: none;
     position: absolute;
-    z-index: 13;
-    /* width: max(300px, 20vw); */
+    z-index: 15;
     max-width: 45ch;
     height: 60vh;
     overflow: visible;
@@ -786,7 +785,9 @@ footer {
         margin-bottom: max(10px, 3vh);
     }
     #part1::before {
-        top: clamp(390px, 55vh, 400px );
+        top: clamp(320px, 55vh, 450px );
+        width: clamp(400px,70vw,650px);
+        /* opacity: calc(1 - (100vw - 768px) / 1536);  */
     }
     #part2 {
         padding-bottom: 0;
@@ -865,5 +866,10 @@ footer {
     .radioBtns~.skills_dev_txts,
     p.skills_dev_txts {
     margin:-35vh 10vw 15vh;
+    }
+}
+@media screen and (max-width:370px) {
+    #part1::before {
+        opacity: .3;
     }
 }

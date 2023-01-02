@@ -25,14 +25,14 @@
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
+                <input type="checkbox" id="checkbox_toggle" onclick="rollUp()"/>
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
                     <li><a href="#part2">Parcours</a></li>
                     <li><a href="#skills">Compétences</a></li>
-                    <li class="projects">
-                        <a href="#">Projets</a>
+                    <li class="projects" onmouseenter="navRemain()">
+                        <a href="#" >Projets</a>
                         <!-- <p>Projets</p> -->
                         <!-- DROPDOWN MENU -->
                         <ul class="dropdown">
@@ -110,7 +110,7 @@
                         différentes délégations russes à Paris.
                         Traduction français-russe. Evénements de grande échelle.</p>
                 </div>
-                <a href="#part2" class="turnPageButton">
+                <a href="#flowersBckg" class="turnPageButton">
                     <img src="multimedia-CV/arrowNext.svg" alt="arrow-next" id="next" onclick="nextPageCall()">
                     <img src="multimedia-CV/arrowPrevious.svg" alt="arrow-previous" id="previous"
                         onclick="previousPage()">
@@ -274,7 +274,7 @@
 
         function changeBackg() {
 
-            checkedElement = document.querySelector(':checked');
+            checkedElement = document.querySelector('#skills :checked');
 
 
             function coche(callback) {
@@ -298,7 +298,7 @@
             setTimeout(() => {
                 window.addEventListener('scroll', () => {
                     const { scrollTop, clientHeight } = document.documentElement;
-                    if (scrollTop <= 1850) { //1380
+                    if (scrollTop <= 1950) { //1380 1850
                         changeBackgBack();
                     }
                 })
@@ -310,9 +310,20 @@
             checkedElement.checked = false;
             navBar.style = "background-color: #0A100D";
         }
-
-
-
+    // NAVBAR
+    // let projectsBtn = document.querySelector("body > header > nav > ul > div > li.projects");
+    scrollTop = document.documentElement.scrollTop;
+    let hamburger = document.querySelector("#checkbox_toggle");
+    function rollUp() {
+        if(hamburger.checked == true) {
+            window.addEventListener('scroll', () => {
+                if (scrollTop += 1 ) {
+                    hamburger.checked = false;
+                }
+        });
+        console.log('checked nav');
+        }
+    }
     </script>
 </body>
 
