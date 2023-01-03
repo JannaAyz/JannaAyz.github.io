@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -106,17 +106,6 @@ input[type=checkbox]{
     margin-right: 3vw;
     user-select: none;
 }
-
-
-/* APPLYING MEDIA QUERIES */
-
-@media (max-width: 768px) {
-
-}
-
-/* #part1, nav, nav button, footer {
-    color: white;
-} */
 #part1,
 #part2 {
     position: relative;
@@ -137,7 +126,7 @@ input[type=checkbox]{
 
 #part1::before {
     background: url('jp-web-pattern.svg');
-    opacity: .4;
+    opacity: .25;
     width: clamp(200px, 70vw, 750px);
     height: 200vh;
     top: max(10px, 30vh);
@@ -171,7 +160,6 @@ input[type=checkbox]{
 
 p:not(p.leftCorner, p.rightCorner) {
     /* position: relative; */
-    
     width: clamp(50ch, 60%, 70ch);
     font-weight: 400;
     font-size: clamp(12px, 2vw, 18px);
@@ -252,6 +240,8 @@ h3 {
 }
 .turnPageButton {
     margin-left: 60vw; 
+    margin-right: 0;
+    padding-right: 0;
     margin-top: 5vh;
     /* display: block; */
     /* margin-left: -1300px;
@@ -259,12 +249,14 @@ h3 {
     /* margin-top: min(900px, 85vh); */
     /* margin-left: min(-90vw,-90vw); */
     /* padding-left: -90vw; */
-    cursor: pointer;
     z-index: 3;
+    padding-bottom: 40px;
+    width:40px;
 }
 
 .turnPageButton>img {
     width: clamp(20px, 5vw, 50px);
+    cursor: pointer;
 }
 
 /* CERCLES WITH TEXT */
@@ -285,7 +277,7 @@ h3 {
     z-index: 10;
     overflow-y: hidden;
     /* margin-top: -90vh; */
-    margin:-20vh auto 0;
+    margin:-40vh auto 0;
     padding-top: -10vh;
 }
 
@@ -311,7 +303,10 @@ h3 {
     user-select: none;
     pointer-events: none;
 }
-
+#skills.blurry > label img {
+    opacity: 0;
+    transition: opacity 1.7s ;
+}
 .cercles {
     scale: 3;
     cursor: pointer;
@@ -337,7 +332,6 @@ h3 {
     z-index: 11;
     margin: 7vw;
 }
-
 /* .fix {
     height:100vh; overflow:hidden; width:100vw;
 }  */
@@ -387,10 +381,11 @@ div.skills_dev_txts>h2 {
 
 #skills img {
     position: absolute;
-    width: 5vw;
+    width: clamp(30px,15vw,60px);
     padding:2vw;
     z-index: 30;
     cursor: pointer;
+   
 }
 #skills img.leftCorner {
     top:-50%;
@@ -400,81 +395,77 @@ div.skills_dev_txts>h2 {
     top:50%;
     left:50%;
 }
-.leftCorner,
-.rightCorner,
+img.leftCorner,
+img.rightCorner,
 .leftCorner.jp_fr_skills,
 .rightCorner.jp_fr_skills,
 .leftCorner.bigger,
-.rightCorner.bigger {
+.rightCorner.bigger,
+#points{
     transition: transform 0.2s ease-out;
+    user-select: none;
 }
-
-.leftCorner {
-    /* transform: translate(20%, 70%); */
-}
-
-label:hover>.leftCorner {
-    /* transform: translate(10%, 60%); */
-}
-
-.rightCorner {
-    /* transform: translate(300%, 263%); */
-}
-
-label:hover>.rightCorner {
-    /* transform: translate(310%, 273%); */
-}
-
 .middle {
     /* transform: translate(220%, 85%); */
-    width: 2%;
+    scale:8;
+    top:20%;
+    left:30%;
+    /* transform: translate(50%, 50%); */
 }
-
 #points {
     /* transform: translate(110%, 350%); */
     scale: 2;
+    top:25%;
+    left:25%;
 }
-
-label:hover>#points {
-    /* transform: translate(115%, 350%); */
+#skills label:hover .leftCorner {
+    /* transition: transform 0.2s ease-out 150ms; */
+    transform : translate(-20%,-10%);
+    transition: transform 0.3s ease-in-out;
+}
+#skills label:hover .rightCorner {
+    /* transition: transform 0.2s ease-out 150ms; */
+    transform : translate(20%,10%);
+    transition: transform 0.3s ease-in-out;
+} 
+#skills label:hover #points {
+    transform: translateX(10%);
+}
+.radioBtns:checked+label .leftCorner {
+    transition: transform 0.2s ease-out 150ms;
+    transform: translate(-80%,-60%) scale(2);
+    opacity: 0;
+    transition: opacity 1.7s ;
+    /* animation: blowLeftLabel 0.5s eaus-out 1500ms; */
+}
+.radioBtns:checked+label .rightCorner {
+    transition: transform 0.2s ease-out 150ms;
+    transform : scale(2) translate(70%,60%);
+    opacity: 0;
+    transition: opacity 1.7s ;
+    /* animation: blowRightLabel 0.5s eaus-out 1500ms; */
+}
+.radioBtns:checked+label img.middle {
+    transition: transform 0.001s ease-out 50ms;
+    transform: scale(0);
 }
 
 .leftCorner.jp_fr_skills {
     /* transform: translate(40%, 60%); */
-    scale: 1.5;
+    scale: 1;
 }
-
-label:hover>.leftCorner.jp_fr_skills {
-    /* transform: translate(30%, 50%); */
-}
-
 .rightCorner.jp_fr_skills {
     /* transform: translate(140%, 150%); */
-    scale: 1.7;
+    scale: 1;
 }
-
-label:hover>.rightCorner.jp_fr_skills {
-    /* transform: translate(150%, 160%); */
-}
-
 .leftCorner.bigger {
     /* transform: translate(35%, 130%); */
-    scale: 2.5;
+    scale: 2;
 }
-
-label:hover>.leftCorner.bigger {
-    /* transform: translate(25%, 120%); */
-}
-
 .rightCorner.bigger {
     /* transform: translate(125%, 280%); */
     scale: 2;
 }
-
-label:hover>.rightCorner.bigger {
-    /* transform: translate(135%, 290%); */
-}
-
 footer {
     background-color: #0A100D;
     height: clamp(250px, 40vh, 350px);
@@ -490,6 +481,12 @@ footer {
 }
 
 /* ANIMATIONS */
+@keyframes leftHover {
+    100% {
+        top:-60%;
+        right:75%;
+    }
+}
 @-webkit-keyframes appear {
     0% {
         opacity: 0;
@@ -676,18 +673,9 @@ footer {
         padding-right: 900px;
         margin:auto;
     }
-
     .turnPageButton {
-        /* padding-right:s 500px; */
-        /* padding-left: -200px; */
         margin-left: 870px;
-        /* display: block; */
         padding-right: 100px;
-
-        /* padding-right: 30px; */
-        /* scale: 3; */
-        /* transform: translateX(50px); */
-        /* margin-right: 400px; */
     }
 }
 @media screen and (min-width:1850px) {
@@ -809,6 +797,9 @@ footer {
         margin-left: min(580px,78vw);
         
     }
+    .turnPageButton {
+        padding-bottom: 0;
+    }
     #skills,
     #skills.blurry {
         /* background-color: aqua; */
@@ -825,10 +816,12 @@ footer {
     #skills.blurry {
         overflow-x: hidden;
     }
+  
     .cercles {
         scale: 2.2;
         margin: 10px 0;
         padding: 40px auto;
+        transform: translateY(max(-10px,-4vh));
     }
 
     #skills #dev,
@@ -861,7 +854,7 @@ footer {
 @media screen and (min-width:425px) {
     .cercles {
         scale:2.6;
-        margin: 10px 10px;
+        margin: 10px;
     }
     .radioBtns~.skills_dev_txts,
     p.skills_dev_txts {
