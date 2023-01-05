@@ -31,32 +31,29 @@
                 <div class="menu">
                     <li><a href="#part2">Parcours</a></li>
                     <li><a href="#skills">Compétences</a></li>
-                    <li class="projects" onmouseenter="navRemain()">
-                        <a href="#" >Projets</a>
-                        <!-- <p>Projets</p> -->
+                    <li><a href="#footer">Contact</a></li>
+                    <!-- <li class="projects" onmouseenter="navRemain()">
+                        <a href="" >Projets</a> -->
                         <!-- DROPDOWN MENU -->
-                        <ul class="dropdown">
-                            <li><a href="#">Projet 1 </a></li>
-                            <li><a href="#">Projet 2</a></li>
-                            <li><a href="#">Projet 3</a></li>
-                        </ul>
+                        <!-- <ul class="dropdown">
+                            <li><a href="">Projet 1 </a></li>
+                            <li><a href="">Projet 2</a></li>
+                            <li><a href="">Projet 3</a></li>
+                        </ul> -->
                     </li>
                 </div>
             </ul>
         </nav>
         <section id="part1">
-            <!-- fleurs ici -->
             <h1>Développeuse web et mobile full-stack junior </h1>
             <p>CSS, HTML, JS, PHP... frameworks tels que React ou Angular ainsi que les logiciels PAO sont les outils
                 avec lesquels je travaille, dans le but de créer des interfaces web et mobile, avec la prise en compte
                 de la SEO, de l'accessibilité et de la maintenabilité côté client. </p>
             <p>Fin 2021, j'ai découvert le développement et commencé à me spécialiser dans la création digitale de
-                manière intensive.</p>
+                manière intensive.<!--<br><bold>Consulter mon github.</bold>--></p>
             <p>J'aime oeuvrer dans la création d'interfaces adaptables, intuitives, intelligentes de part leur code et
                 leur design, en m'améliorant constamment dans la proposition de solutions informatiques face à des
                 enjeux différents. </p>
-            <!-- ou ici -->
-            <!-- <img id="part1_pattern" src="" alt="flower-web-pattern"> -->
         </section>
     </header>
     <!-- fleurs ici -->
@@ -81,8 +78,8 @@
                         à <em>Tokyo University of Foreign Studies</em> : études linguistiques, sociétales, historiques
                         et
                         cours d'interprétation anglais-japonais.</p>
-                    <h3 class="descriptionCV5 delay5">Diplôme des Métiers d'Arts, ENSAAMA, Paris</h3>
-                    <p class="descriptionCV6 delay6">2012 - 2015・3 ans<br>
+                    <h3 class="descriptionCV7 delay7">Diplôme des Métiers d'Arts, ENSAAMA, Paris</h3>
+                    <p class="descriptionCV8 delay8">2012 - 2015・3 ans<br>
                         Décoration de surfaces option "laque", avec stage d'un mois dans un atelier au Japon, pour
                         apprendre
                         la laque japonaise - <em>urushi</em>.</p>
@@ -104,8 +101,8 @@
                     <p class="descriptionCV6 delay6">Eté 2019・2,5 mois<br>
                         Vente dans la restauration, préparation d'événements en plein air, services lors de cérémonies,
                         pratique des "coutumes professionnelles" japonaises, adaptation aux cadres variés.</p>
-                    <h3 class="descriptionCV5 delay5">Interprète, Maison France-Tatarstan (région russe), Paris</h3>
-                    <p class="descriptionCV6 delay6">2015 - 2017・2 ans<br>
+                    <h3 class="descriptionCV7 delay7">Interprète, Maison France-Tatarstan (région russe), Paris</h3>
+                    <p class="descriptionCV8 delay8">2015 - 2017・2 ans<br>
                         Bénévolat et travail occasionnel, pour l'organisation d'événements : concerts, voyages, etc. par
                         différentes délégations russes à Paris.
                         Traduction français-russe. Evénements de grande échelle.</p>
@@ -146,7 +143,7 @@
             </label>
             <div class="skills_dev_txts">
                 <a class="closeButton" onclick=changeBackgBack()>X</a>
-                <h2>Informatique</h2>
+                <h2>Projets</h2>
                 <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
                 <p>React JS, Node JS, Bootstrap</p>
                 <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
@@ -163,7 +160,7 @@
             </label>
             <div class="skills_dev_txts">
                 <a class="closeButton" onclick=changeBackgBack()>X</a>
-                <h2>Informatique</h2>
+                <h2>Langues</h2>
                 <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
                 <p>React JS, Node JS, Bootstrap</p>
                 <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
@@ -180,7 +177,7 @@
             </label>
             <div class="skills_dev_txts">
                 <a class="closeButton" onclick=changeBackgBack()>X</a>
-                <h2>Informatique</h2>
+                <h2>Langues</h2>
                 <p>HTML5, CSS3, JavaScript, PHP, mySQL</p>
                 <p>React JS, Node JS, Bootstrap</p>
                 <p>Outils de retouche et de création graphique PAO (suite Adobe...)</p>
@@ -190,7 +187,7 @@
         </div>
     </div>
     <!-- </section> -->
-    <footer>
+    <footer id="footer">
         <img id="maneki_neko" src="multimedia-CV\manekiNeko-white.svg" alt="cat-picture-maneki-neko">
     </footer>
 
@@ -298,7 +295,7 @@
             setTimeout(() => {
                 window.addEventListener('scroll', () => {
                     const { scrollTop, clientHeight } = document.documentElement;
-                    if (scrollTop <= 1950) { //1380 1850
+                    if (scrollTop <= 2350) { //1380 1850
                         changeBackgBack();
                     }
                 })
