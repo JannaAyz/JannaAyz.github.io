@@ -895,7 +895,7 @@ footer {
     p.skills_dev_txts {
     width: 80vw;
     overflow: hidden;
-    top:10%;
+    top:15%;
     }
     div.skills_dev_txts>p {
         max-width: 66vw;
