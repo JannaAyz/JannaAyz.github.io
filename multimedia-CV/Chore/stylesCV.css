@@ -713,7 +713,6 @@ footer {
         max-width: 45vw;
         font-size: 1vw;
     }
-
     #book p,
     #part1 p{
         font-size: 25px;
@@ -769,7 +768,6 @@ footer {
         top: max(80px, 35vh);
     }
 }
-
 @media screen and (max-width:1055px) and (min-width:769px) {
     #part1::before {
         width: clamp(200px, 70vw, 750px);
@@ -779,7 +777,6 @@ footer {
         margin-left: min(660px,80vw);
     }
 }
-
 @media screen and (max-width:768px) {
     .menu { 
         display: none;
@@ -792,9 +789,6 @@ footer {
     }
     .menu li:hover {
         display: inline-block;
-        /* background-color: #0A100D; */
-        /* color: rgb(206, 205, 205); */
-        /* transition: 0.3s ease; */
     }
     .menu li + li {
         padding-top: 15px;
@@ -822,7 +816,6 @@ footer {
         padding-bottom: min(10px, 1vh);
         padding-top: min(16px, 2vh);
     }
-
     #part1 p {
         max-width: min(80vw, 60ch);
         margin-bottom: max(10px, 2vh);
@@ -846,13 +839,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
     #visible>*,
     #visible2>* {
         max-width: 80vw;
         margin: auto 0;
     }
-
     .turnPageButton {
         margin-left: min(580px,78vw);
         
@@ -881,24 +872,20 @@ footer {
         overflow-x: hidden;
         padding-top: 5vh;
     }
-  
     .cercles {
         scale: 2.2;
         margin: 10px 0;
         padding: 40px auto;
         transform: translateY(max(-10px,-4vh));
     }
-
     #skills #dev,
     #skills #languages{
         margin-right: 47vw;
     }
-
     #skills #exp,
     #skills #softSk {
         margin-left: 47vw;
     }
-   
     #cercleI:checked~#dev #cercle1,
     #cercleII:checked~#exp #cercle2,
     #cercleIII:checked~#languages #cercle3,
@@ -906,52 +893,15 @@ footer {
         scale: 5;
         overflow: hidden;
     }
-
     .radioBtns~.skills_dev_txts,
     p.skills_dev_txts {
-/*     padding: 5vh 10vw 20vh; */
     width: 80vw;
-    height: 50vh;
     overflow: hidden;
-    top:20%;
+    top:10%;
     }
     div.skills_dev_txts>p {
-        max-width: 70vw;
+        max-width: 66vw;
     }
-
-    /* .skills_dev_txts, */
-/* p.skills_dev_txts {
-    padding: 30px;
-    padding-bottom: 50px;
-    background-color: white;
-    border-radius: 5px;
-    display: none;
-    position: absolute;
-    z-index: 15;
-    max-width: 65ch;
-    /* height: 60vh; */
-    /* box-sizing: border-box;
-    overflow: visible;
-    margin: max(100px,10vh) 25vw auto; */
-    /* margin-top: max(150px, 10vh); */
-    /* top:40%; */
-    /* animation-name: appear;
-    animation-duration: 0.01s;
-    animation-direction: reverse; */
- 
-/* #skills > div:nth-child(8) {
-    max-width: 50ch;
-}
-
-div.skills_dev_txts>p {
-    font-size: clamp(12px, 3vw, 20px);
-     */
-    /* max-width: max(250px, 20vw); */
-    /* max-width: 46ch; */
-/* } */
-
-
-
 }
 @media screen and (min-width:425px) {
     .cercles {
