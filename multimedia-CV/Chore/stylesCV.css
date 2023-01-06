@@ -909,7 +909,7 @@ footer {
 
     .radioBtns~.skills_dev_txts,
     p.skills_dev_txts {
-    padding: 5vh 10vw 20vh;
+/*     padding: 5vh 10vw 20vh; */
     width: 80vw;
     height: 50vh;
     overflow: hidden;
