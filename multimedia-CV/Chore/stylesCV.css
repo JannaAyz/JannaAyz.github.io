@@ -895,11 +895,13 @@ footer {
     p.skills_dev_txts {
     width: 80vw;
     overflow: hidden;
-    top:15%;
     }
     div.skills_dev_txts>p {
         max-width: 66vw;
-        /* font-size: 13px; */
+    }
+     }
+    #skills > div:nth-child(11), p.skills_dev_txts {
+        top:15%;
     }
 }
 @media screen and (min-width:425px) {
