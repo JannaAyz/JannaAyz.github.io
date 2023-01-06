@@ -1,3 +1,7 @@
+:root {
+    --yellow :#FFBA49;
+    --green:#939F5C;
+}
 *{
     padding: 0;
     margin: 0;
@@ -298,6 +302,7 @@ h3 {
     background-color: #f5e8e9be;
     height: 110vh;
     z-index: 30;
+    padding-top: -30vh;
 }
 
 #skills.blurry>label {
@@ -335,15 +340,13 @@ h3 {
 #cercleVI:checked~#softSk #cercle4 {
     transition: all 400ms ease-in-out;
     scale: 9;
-    z-index: 11;
+    z-index: 15;
     margin: 7vw;
 }
-/* .fix {
-    height:100vh; overflow:hidden; width:100vw;
-}  */
-.radioBtns~.skills_dev_txts,
+/*.radioBtns~*/.skills_dev_txts,
 p.skills_dev_txts {
     padding: 30px;
+    padding-bottom: 50px;
     background-color: white;
     border-radius: 5px;
     margin-top: min(50px, 180px);
@@ -351,37 +354,66 @@ p.skills_dev_txts {
     position: absolute;
     z-index: 15;
     max-width: 45ch;
-    height: 60vh;
+    /* height: 60vh; */
+    box-sizing: border-box;
     overflow: visible;
     margin: auto 25vw;
     top:50%;
     /* animation-name: appear;
     animation-duration: 0.01s;
     animation-direction: reverse; */
-
 }
 
 div.skills_dev_txts>p {
     font-size: clamp(12px, 3vw, 20px);
-    margin: 7px 0;
+    margin: 7px 0 15px;
     /* max-width: max(250px, 20vw); */
-    max-width: 36ch;
+    max-width: 30ch;
 }
 div.skills_dev_txts>h2 {
     text-align: left;
     margin-right: 10px;
     margin: 0;
-    margin-bottom: 30px;
-    margin-top: -25px;
+    padding-bottom: 33px;
+    margin-top: -5px;
+    position: relative;
+    z-index: 15;
 } 
+.yellowUnderline::before, .greenUnderline::before {
+    position: absolute;
+    content: '';
+    height:3px;
+    width: 10ch;
+    display: block;
+    left:1%;
+    top:60%;
+    z-index: -1;
+}
+.greenUnderline::before {
+    background-color:var(--green);
+    width: 5ch;
+}
+.yellowUnderline::before {
+    background-color:var(--yellow);
+}
+.lang.yellowUnderline::before {
+    width: 6ch;
+}
+.skil.greenUnderline::before {
+    width:10ch;
+}
 .closeButton {
     color: black;
     margin-left: 95%;
     font-size: min(35px, 10vw);
     user-select: none;
     cursor: pointer;
+    z-index: 17;
+    position: absolute;
+    right:30px;
+    top:15px;
 }
-.radioBtns:checked~.skills_dev_txts {
+.radioBtns:checked+.skills_dev_txts {
     -webkit-animation: appear 0.9s;
     animation: appear 0.9s;
     display: block;
@@ -794,8 +826,8 @@ footer {
         margin-bottom: max(10px, 3vh);
     }
     #part1::before {
-        top: clamp(320px, 50vh, 489px ); 
-        width: clamp(350px,85vw,650px);
+        top: clamp(320px, 65vh, 489px ); 
+        width: clamp(390px,95vw,750px);
         /* opacity: calc(1 - (100vw - 768px) / 1536);  */
     }
     #part2 {
