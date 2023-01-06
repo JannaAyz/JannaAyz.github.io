@@ -182,16 +182,8 @@ p:not(p.leftCorner, p.rightCorner) {
 #part1 p {
     font-size: clamp(15px, 3vw, 20px);
     margin-left: 0;
+    max-width: min(800px,70vw);
 }
-
-/* h1, h2, h3 {
-    /* margin-left: 200px;
-    margin: auto 20vw; */
-    /* margin: min(10px, 2vw) auto;
-    width: clamp(50ch, 60%, 70ch);
-    margin-right: auto; */
-    /* margin-left: 10%; */
-
 h2, h3 {
     width: 75ch;
 }
@@ -200,7 +192,7 @@ h1 {
     font-weight: 500;
     margin-left: 0;
     margin-bottom: max(35px, 6vh);
-    max-width: 80vw;
+    max-width: 70vw;
 }
 
 h2 {
@@ -349,26 +341,29 @@ p.skills_dev_txts {
     padding-bottom: 50px;
     background-color: white;
     border-radius: 5px;
-    margin-top: min(50px, 180px);
     display: none;
     position: absolute;
     z-index: 15;
-    max-width: 45ch;
+    max-width: 65ch;
     /* height: 60vh; */
     box-sizing: border-box;
     overflow: visible;
-    margin: auto 25vw;
-    top:50%;
+    margin: max(100px,10vh) 25vw auto;
+    /* margin-top: max(150px, 10vh); */
+    top:40%;
     /* animation-name: appear;
     animation-duration: 0.01s;
     animation-direction: reverse; */
+}
+#skills > div:nth-child(8) {
+    max-width: 50ch;
 }
 
 div.skills_dev_txts>p {
     font-size: clamp(12px, 3vw, 20px);
     margin: 7px 0 15px;
     /* max-width: max(250px, 20vw); */
-    max-width: 30ch;
+    max-width: 46ch;
 }
 div.skills_dev_txts>h2 {
     text-align: left;
@@ -423,7 +418,7 @@ div.skills_dev_txts>h2 {
     position: absolute;
     width: clamp(30px,15vw,60px);
     padding:2vw;
-    padding-top: 2vw;
+    padding-top: -6vh;
     z-index: 30;
     cursor: pointer;
 }
@@ -450,8 +445,10 @@ img.rightCorner,
     /* transform: translate(220%, 85%); */
     scale:8;
     top:20%;
-    left:37%;
-    /* transform: translate(50%, 50%); */
+    left:clamp(5vws,37%,10px);
+    /* margin-left: min(30px,2vw);
+    padding:0; */
+    
 }
 #points {
     /* transform: translate(110%, 350%); */
@@ -707,7 +704,10 @@ footer {
         margin-left: 28vw;
         max-width: 50ch;
     }
-
+    h3 {
+        margin: 20px auto;
+        font-size: 25px;
+    }
     #book {
         margin-left: 28vw;
         max-width: 45vw;
@@ -720,22 +720,14 @@ footer {
         margin-top: 20px;
         margin-bottom:30px;
     }
-
     #visible>*:not(.turnPageButton),
     #visible2>*:not(.turnPageButton) {
         padding-right: 900px;
-        margin:auto;
+        /* margin:auto; */
     }
     .turnPageButton {
         margin-left: 870px;
         padding-right: 100px;
-    }
-}
-@media screen and (min-width:1850px) {
-    #part1::before {
-        width: 40vw;
-        top:min(200px,30vh);
-        opacity: .6;
     }
 }
 @media screen and (max-width:2558px) AND (min-width:1100px) {
@@ -744,17 +736,32 @@ footer {
         margin-left: 5vw;
         
     }
-    #part1 p{
-        font-size: 25px;
-        margin-top: 20px;
-        margin-bottom:30px;
-    }
+    
     #visible, #visible2 {
         margin: auto clamp(10px,20vw, 590px);
     }
     .turnPageButton {
         margin-left: clamp(800px,60vw, 1250px);
         margin-top: -3vh;
+    }
+}
+@media screen and (min-width:1850px) {
+    #part1::before {
+        width: min(1300px,60vw);
+        top:min(200px,30vh);
+        left: 90;
+        opacity: .6;
+    }
+    #part1 p{
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom:30px;
+    }
+    label {
+        scale:1.5;
+    }
+    .cercles {
+        transform: translateY(5%);
     }
 }
 @media screen and (max-width:1244px) AND (min-width:1056px) {
@@ -872,6 +879,7 @@ footer {
     }
     #skills.blurry {
         overflow-x: hidden;
+        padding-top: 5vh;
     }
   
     .cercles {
@@ -902,11 +910,48 @@ footer {
     .radioBtns~.skills_dev_txts,
     p.skills_dev_txts {
     padding: 5vh 10vw 20vh;
-    width: max(230px, 60vw);
+    width: max(230px, 80vw);
     height: 50vh;
     overflow: hidden;
     top:5%;
     }
+    div.skills_dev_txts>p {
+        max-width: 70vw;
+    }
+
+    /* .skills_dev_txts, */
+/* p.skills_dev_txts {
+    padding: 30px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    z-index: 15;
+    max-width: 65ch;
+    /* height: 60vh; */
+    /* box-sizing: border-box;
+    overflow: visible;
+    margin: max(100px,10vh) 25vw auto; */
+    /* margin-top: max(150px, 10vh); */
+    /* top:40%; */
+    /* animation-name: appear;
+    animation-duration: 0.01s;
+    animation-direction: reverse; */
+ 
+/* #skills > div:nth-child(8) {
+    max-width: 50ch;
+}
+
+div.skills_dev_txts>p {
+    font-size: clamp(12px, 3vw, 20px);
+     */
+    /* max-width: max(250px, 20vw); */
+    /* max-width: 46ch; */
+/* } */
+
+
+
 }
 @media screen and (min-width:425px) {
     .cercles {
