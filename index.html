@@ -124,7 +124,8 @@
                     <b>Bibliothèques : </b>React JS, Node JS, Symfony, Bootstrap<br><br>
                     <b>Suite Adobe : </b>Ps, Ai, Xd, Ae, Id<br><br>
                     <b>Bureautique : </b>MS Office, Google suite<br><br>
-                    <b>CMS : </b>Wordpress</p>
+                    <b>CMS : </b>Wordpress
+                </p>
             </div>
             <label for="cercleI" id="dev">
                 <img class="leftCorner" src="multimedia-CV\open-tag.png" alt="">
@@ -138,8 +139,12 @@
             <div class="skills_dev_txts">
                 <a class="closeButton" onclick=changeBackgBack()>X</a>
                 <h2 class="greenUnderline">Projets</h2>
-                <p><b>Logiciel de recherche d'emlpoi : </b>travil en équipe d'apprenti dévelppeurs sur un logiciel accessible aux personnes non familières avec l'informatique. Leur permettant de trouver un emploi rapidement.<br>Front-end et maquettage du logiciel. Méthode agile.<br><br>
-                   <b>Maquettes interactives : </b>proposition de prototypes de page web - partie boutique. Avec Adobe Xd.</p>
+                <p><b>Logiciel de recherche d'emlpoi : </b>travail en équipe d'apprenti développeurs sur un logiciel
+                    accessible aux personnes non familières avec l'informatique. Leur permettant de trouver un emploi
+                    rapidement.<br>Front-end et maquettage du logiciel. Méthode agile.<br><br>
+                    <b>Maquettes interactives : </b>proposition de prototypes de page web - partie boutique. Avec Adobe
+                    Xd.
+                </p>
             </div>
             <label for="cercleII" id="exp">
                 <img id="points" class="middle" src="multimedia-CV\points-jp.png" alt="">
@@ -169,10 +174,13 @@
                 <a class="closeButton" onclick=changeBackgBack()>X</a>
                 <h2 class="skil greenUnderline">Compétences</h2>
                 <p><b>Curiosité : </b>veille technologique, curiosité culturelle et linguistique.<br><br>
-                    <b>Rigueur : </b>discipline de la pratique des arts martiaux - ceinture marron de judo, boxe française. Respect des échéances.<br><br>
+                    <b>Rigueur : </b>discipline de la pratique des arts martiaux - ceinture marron de judo, boxe
+                    française. Respect des échéances.<br><br>
                     <b>Esprit de synthèse : </b>rédactionnelle et synthétisation des objectifs.<br><br>
-                    <b>Fléxibilité : </b>facilité d'adaptation aux nouveaux environnements - expatriation et travail au Japon.<br><br>
-                    <b>Autonomie et travail en groupe : </b>apprentissage en autodidacte, partage des connaissances et esprit d'équipe.
+                    <b>Fléxibilité : </b>facilité d'adaptation aux nouveaux environnements - expatriation et travail au
+                    Japon.<br><br>
+                    <b>Autonomie et travail en groupe : </b>apprentissage en autodidacte, partage des connaissances et
+                    esprit d'équipe.
                 </p>
             </div>
             <label for="cercleVI" id="softSk">
@@ -187,6 +195,13 @@
     <!-- </section> -->
     <footer id="footer">
         <img id="maneki_neko" src="multimedia-CV\manekiNeko-white.svg" alt="cat-picture-maneki-neko">
+        <div id="txt_footer">
+            <h4>Me contacter</h4><br>
+            <p><span class="bolder">Mail : </span>jeanne.ayz@proton.me</p>
+            <p><span class="bolder">LinkedIn : </span><a href="https://www.linkedin.com/in/jeanne-a-2bbba5198/"
+                    target="_blank">Jeanne Ayzatova</a></p>
+            <p id="noteThat">Chaque visuel est de création personnelle</p>
+        </div>
     </footer>
 
     <script>
@@ -319,6 +334,17 @@
                 console.log('checked nav');
             }
         }
+        //ON SCROLL
+        window.addEventListener("scroll", function(){
+		const NEKO = document.querySelector("#maneki_neko");
+        const TXTFOO = document.querySelector("#txt_footer");
+		NEKO.classList.toggle("toBottom", window.scrollY >= 1970);
+        TXTFOO.classList.toggle("toLeft", window.scrollY >= 1970);  
+        const BOOK = document.querySelector("#book");    
+        if(window.scrollY >= 350){
+            BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
+        }     
+	}) 
     </script>
 </body>
 
