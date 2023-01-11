@@ -50,7 +50,7 @@
                 avec lesquels je travaille, dans le but de créer des interfaces web et mobile, qui tiennent compte
                 du référencement, de l'accessibilité et de la maintenabilité côté client. </p>
             <p>Fin 2021, j'ai découvert le développement et commencé à me spécialiser dans la création digitale de
-                manière intensive.<!--<br><b>Consulter mon github.</b>--></p>
+                manière intensive.<br><b>Consulter mon github.</b></p>
             <p>J'aime oeuvrer dans la création d'interfaces adaptables, intuitives, intelligentes de part leur code et
                 leur design, en m'améliorant constamment dans la proposition de solutions informatiques face à des
                 enjeux différents. </p>
@@ -114,7 +114,7 @@
                 </a>
             </div>
         </section>
-        <!-- <section id="part3"> -->
+        <section id="part3">
         <div id="skills">
             <input class="radioBtns" type="radio" id="cercleI" onchange="changeBackg()">
             <div class="skills_dev_txts">
@@ -192,7 +192,7 @@
             </label>
         </div>
     </div>
-    <!-- </section> -->
+    </section>
     <footer id="footer">
         <img id="maneki_neko" src="multimedia-CV\manekiNeko-white.svg" alt="cat-picture-maneki-neko">
         <div id="txt_footer">
@@ -202,9 +202,25 @@
                     target="_blank">Jeanne Ayzatova</a></p>
             <p id="noteThat">Chaque visuel est de création personnelle</p>
         </div>
-    </footer>
+    </footer> 
 
     <script>
+        //ON SCROLL
+        const SMALLSCR = window.matchMedia("(max-width: 615px)");
+        window.addEventListener("scroll", function(){
+            const BOOK = document.querySelector("#book");    
+            if(window.scrollY >= 450){
+                BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
+            }   
+            if (SMALLSCR.matches) { 
+                const NEKO = document.querySelector("#maneki_neko");
+                const TXTFOO = document.querySelector("#txt_footer");
+                const FOO = document.querySelector("#footer");
+                NEKO.classList.toggle("toBottom", window.scrollY >= 1770);
+                TXTFOO.classList.toggle("toLeft", window.scrollY >= 1770);  
+                FOO.classList.toggle("moreHeight", window.scrollY >= 1900);
+            }     
+	    }) 
         //General functions
         function hide(elmnt) {
             elmnt.style = "display:none;";
@@ -333,23 +349,7 @@
                 });
                 console.log('checked nav');
             }
-	}
-        //ON SCROLL
-        const SMALLSCR = window.matchMedia("(max-width: 615px)");
-        window.addEventListener("scroll", function(){
-            const BOOK = document.querySelector("#book");    
-            if(window.scrollY >= 450){
-                BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
-            }   
-            if (SMALLSCR.matches) { 
-                const NEKO = document.querySelector("#maneki_neko");
-                const TXTFOO = document.querySelector("#txt_footer");
-                const FOO = document.querySelector("#footer");
-                NEKO.classList.toggle("toBottom", window.scrollY >= 1770);
-                TXTFOO.classList.toggle("toLeft", window.scrollY >= 1770);  
-//                 FOO.classList.toggle("moreHeight", window.scrollY >= 1850);
-            }     
-	    }) 
+        }
     </script>
 </body>
 
