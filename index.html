@@ -335,15 +335,20 @@
             }
         }
         //ON SCROLL
+        const SMALLSCR = window.matchMedia("(max-width: 615px)");
         window.addEventListener("scroll", function(){
-		const NEKO = document.querySelector("#maneki_neko");
-        const TXTFOO = document.querySelector("#txt_footer");
-		NEKO.classList.toggle("toBottom", window.scrollY >= 1970);
-        TXTFOO.classList.toggle("toLeft", window.scrollY >= 1970);  
-        const BOOK = document.querySelector("#book");    
-        if(window.scrollY >= 350){
-            BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
-        }     
+            const BOOK = document.querySelector("#book");    
+            if(window.scrollY >= 450){
+                BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
+            }   
+            if (SMALLSCR.matches) { 
+                const NEKO = document.querySelector("#maneki_neko");
+                const TXTFOO = document.querySelector("#txt_footer");
+                const FOO = document.querySelector("#footer");
+                NEKO.classList.toggle("toBottom", window.scrollY >= 1970);
+                TXTFOO.classList.toggle("toLeft", window.scrollY >= 1970);  
+                FOO.style("height:510px;", window.scrollY >= 1970);
+            }     
 	}) 
     </script>
 </body>
