@@ -209,7 +209,7 @@
         const SMALLSCR = window.matchMedia("(max-width: 615px)");
         window.addEventListener("scroll", function(){
             const BOOK = document.querySelector("#book");    
-            if(window.scrollY >= 450){
+            if(window.scrollY >= 350){
                 BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
             }   
             if (SMALLSCR.matches) { 
