@@ -980,7 +980,7 @@ h4 {
         top:5%;
         left:96%; 
         transition: transform 1s 800ms;
-        transform: translateX(-100%); 
+        transform: translateX(-110%); 
     }
     #maneki_neko {
         height: clamp(360px, 45vw, 690px);
@@ -1011,10 +1011,9 @@ h4 {
     #cercle4 {
         margin-top: 15px;
     }
-    /* #maneki_neko {
-        height : 100px;
-        
-    } */
+    #txt_footer.toLeft{
+        transform: translateX(-96%); 
+    }
 }
 .toBottom {
     transition: transform 1s ease-in-out;
