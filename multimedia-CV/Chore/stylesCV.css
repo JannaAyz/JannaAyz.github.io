@@ -31,17 +31,12 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 10px; */
-    /* padding-right: 20px; */
     background-color: #0A100D;
     color: white;
-    /* box-sizing: border-box; */
     width: min(100vw, 100vw);
-    /* margin:0; */
     position: fixed;
     z-index: 20;  
     padding-bottom: 5px;
-/*     overflow-x: hidden; */
 }
     /* LOGO */
 #logo {
@@ -54,6 +49,7 @@ li {
     font-size: 18px;
     padding-right: 3vw;
     width: 100vw;
+    /* box-sizing: ; */
 }
 .menu li:hover a {
     color: rgb(206, 205, 205);
@@ -111,7 +107,7 @@ input[type=checkbox]{
 .hamburger {
     display: none;
     font-size: min(30px,10vw);
-    margin-right: 3vw;
+    margin-right: 5vw;
     user-select: none;
 }
 .bold {
@@ -806,7 +802,7 @@ h4 {
         display: none;
         position: absolute;
         background-color: #0A100D;
-        right: 0;
+        right: 10;
         left:0;
         text-align: center;
         padding: 16px 0;
@@ -822,6 +818,7 @@ h4 {
     }
     .hamburger {
         display: block;
+        z-index:25;
     }
     .dropdown {
         left: 50%;
@@ -939,15 +936,7 @@ h4 {
         width: 60vw;
         width: auto;
         margin-top: 50px;
-    }
-    /* footer {
-        overflow-x: hidden;
-    } */
-    /*#maneki_neko, #txt_footer */
-        /* height: clamp(250px, 45vh, 390px); */
-        /* overflow-x: hidden; */
-        
-    
+    }    
 }
 @media screen and (min-width:425px) {
     
@@ -968,12 +957,12 @@ h4 {
         display: block;
         padding-top: 35px;
         overflow: hidden;
-        height: 510px;
+        height: 350px;
         position: relative;
     }
-/*     footer.moreHeight {
+    footer.moreHeight {
         height: 510px;
-    } */
+    }
     #txt_footer{
         opacity: 0;
     }
