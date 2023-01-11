@@ -970,6 +970,9 @@ h4 {
         height: 350px;
         position: relative;
     }
+    footer.moreHeight {
+        height: 510px;
+    }
     #txt_footer{
         opacity: 0;
     }
