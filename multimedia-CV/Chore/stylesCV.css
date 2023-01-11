@@ -530,11 +530,9 @@ h4 {
     font-weight: 500;
     margin:15px auto;
     /* text-align: center; */
-    
 }
 .bolder {
     font-weight: 500;
-    /* text-align: left; */
 }
 #noteThat {
     margin-top: max(50px,4vw);
@@ -542,7 +540,6 @@ h4 {
     font-size: 13px;
     /* text-align: center; */
 }
-
 /* ANIMATIONS */
 @keyframes leftHover {
     100% {
@@ -970,15 +967,20 @@ h4 {
         display: block;
         padding-top: 35px;
         overflow: hidden;
-        height: 510px;
+        height: 400px;
         position: relative;
+    }
+    #txt_footer{
+        opacity: 0;
     }
     #txt_footer.toLeft {
         position: absolute;
+        opacity: 1;
+        transition: opacity 1s;
         top:5%;
         left:96%; 
         transition: transform 1s 800ms;
-        transform: translateX(-96%); 
+        transform: translateX(-100%); 
     }
     #maneki_neko {
         height: clamp(360px, 45vw, 690px);
