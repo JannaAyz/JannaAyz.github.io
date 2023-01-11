@@ -436,6 +436,7 @@ img.rightCorner,
     /* transform: translate(220%, 85%); */
     scale:8;
     top:20%;
+    left:30%;
     left:clamp(5vws,37%,10px);
     /* margin-left: min(30px,2vw);
     padding:0; */
