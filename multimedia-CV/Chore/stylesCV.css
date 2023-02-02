@@ -450,19 +450,7 @@ img.rightCorner,
     top:25%;
     left:25%;
 }
-#skills label:hover .leftCorner {
-    /* transition: transform 0.2s ease-out 150ms; */
-    transform : translate(-20%,-10%);
-    transition: transform 0.3s ease-in-out;
-}
-#skills label:hover .rightCorner {
-    /* transition: transform 0.2s ease-out 150ms; */
-    transform : translate(20%,10%);
-    transition: transform 0.3s ease-in-out;
-} 
-#skills label:hover #points {
-    transform: translateX(10%);
-}
+
 .radioBtns:checked+label .leftCorner {
     transition: transform 0.2s ease-out 150ms;
     transform: translate(-80%,-60%) scale(2);
@@ -522,8 +510,8 @@ footer a{
     font-size: max(18px,1vw);
 }
 #maneki_neko {
-    height: clamp(250px, 45vh, 390px);
-    height: clamp(280px,40vw, 690px);
+    /* height: clamp(200px, 30vh, 390px); */
+    height: clamp(250px,32vw, 690px);
 }
 h4 {
     font-size: max(36px,2vw);
@@ -758,7 +746,6 @@ h4 {
         margin-left: 5vw;
         
     }
-    
     #visible, #visible2 {
         margin: auto clamp(10px,20vw, 590px);
     }
@@ -799,6 +786,21 @@ h4 {
     .turnPageButton {
         margin-left: min(660px,80vw);
     }
+}
+@media screen and (min-width:768px) {
+#skills label:hover .leftCorner {
+    /* transition: transform 0.2s ease-out 150ms; */
+    transform : translate(-20%,-10%);
+    transition: transform 0.3s ease-in-out;
+}
+#skills label:hover .rightCorner {
+    /* transition: transform 0.2s ease-out 150ms; */
+    transform : translate(20%,10%);
+    transition: transform 0.3s ease-in-out;
+} 
+#skills label:hover #points {
+    transform: translateX(10%);
+}
 }
 @media screen and (max-width:768px) {
     .menu { 
