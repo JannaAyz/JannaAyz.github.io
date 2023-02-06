@@ -21,6 +21,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     width: 100vw;
+    scroll-behavior: smooth;
 }
 .mobile {
     display: none;
@@ -483,7 +484,7 @@ img, #fourthPart img {
     width: 100vw;
 }
 .text_corner {
-    height:80vh;
+    height:70vh;
     text-align: center;
 }
 .text_corner > * {
@@ -526,7 +527,7 @@ img, #fourthPart img {
 #fifthPart {
     /* height: 80vh; */
     margin: 23vw auto;
-    padding-bottom: max(60px, 40vw);
+/*     padding-bottom: max(60px, 40vw); */
 }
 #bckg_cherries > h3, #bckg_clementine > h3 {
     margin:30vw auto;
