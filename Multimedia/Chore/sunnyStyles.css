@@ -374,9 +374,9 @@ h1 {
     }
 }
 @media screen and (max-width:600px) {
-/* body  {
+body  {
     min-width: 105vw;
-} */
+}
 .pc {
     display: none;
 }
@@ -431,8 +431,8 @@ h1 {
     display: block;
     position: absolute;
     z-index: -1;
-    scale:3.5;
-    top:max(60px,50vw);
+    scale:2.5;
+    top:max(60px,70vw);
     left:90vw;
     /* margin: 35% auto 0; */
 }
@@ -471,10 +471,10 @@ h1 {
 #check:checked ~ #responsiveMenu{
     display: block;
 }
-#thirdPart{
+#fourthPart{
     flex-direction: column-reverse;
 }
-#secondPart, #fourthPart, #fifthPart {
+#secondPart, #thirdPart, #fifthPart {
     flex-direction: column;
 }
 img, #fourthPart img {
@@ -484,7 +484,7 @@ img, #fourthPart img {
     width: 100vw;
 }
 .text_corner {
-    height:70vh;
+    height:80vh;
     text-align: center;
 }
 .text_corner > * {
@@ -527,7 +527,7 @@ img, #fourthPart img {
 #fifthPart {
     /* height: 80vh; */
     margin: 23vw auto;
-/*     padding-bottom: max(60px, 40vw); */
+    /* padding-bottom: max(60px, 40vw); */
 }
 #bckg_cherries > h3, #bckg_clementine > h3 {
     margin:30vw auto;
