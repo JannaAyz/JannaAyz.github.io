@@ -12,13 +12,6 @@
 
 <body>
     <header>
-        <!-- <img id="logo" src="multimedia-CV/logo-jeanne.svg" alt="logo-Jeanne-Ayzatova">
-            <ul>
-                <li><a href="#part2">Parcours</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-            <button>Projets</button> -->
         <nav class="navbar">
             <!-- LOGO -->
             <img id="logo" src="multimedia-CV/logo-jeanne.svg" alt="logo-Jeanne-Ayzatova">
@@ -32,14 +25,6 @@
                     <li><a href="#part2">Parcours</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#footer">Contact</a></li>
-                    <!-- <li class="projects" onmouseenter="navRemain()">
-                        <a href="" >Projets</a> -->
-                    <!-- DROPDOWN MENU -->
-                    <!-- <ul class="dropdown">
-                            <li><a href="">Projet 1 </a></li>
-                            <li><a href="">Projet 2</a></li>
-                            <li><a href="">Projet 3</a></li>
-                        </ul> -->
                     </li>
                 </div>
             </ul>
@@ -227,9 +212,7 @@
             elmnt.style = "display:none;";
         }
         function show(elmnt) {
-            // if(elmnt.classList.contains("scdown")) {
             elmnt.style.cssText = "display:block;";
-            // }
         }
         function scrollDown(elmnt) {
             elmnt.className += "scdown";
@@ -260,7 +243,6 @@
         }
         //Call the text animation, from the first to the second one
         function nextPageCall() {
-            // document.querySelector("body > header > nav > ul > li:nth-child(1) > a").click();
             noClass();
             setTimeout(() => {
                 nextPage(aca, pro, btnNext, btnPrev);
@@ -268,7 +250,6 @@
         }
         //Call the text animation, from the second to the first one
         function previousPage() {
-            // document.querySelector("body > header > nav > ul > li:nth-child(1) > a").click();
             noClass();
             setTimeout(nextPage(pro, aca, btnPrev, btnNext), 10);
         }
@@ -283,22 +264,6 @@
             labelImgs = document.querySelectorAll('#skills  label > img'),
             navBar = document.querySelector("body > header > nav"),
             labelsToErase = document.querySelectorAll('#skills.blurry  label > img');
-
-        // labelsToErase.style = 'display:none;';
-
-        // leftCorners = document.querySelectorAll('label:hover > .leftCorner'),
-        // rightCorners = document.querySelectorAll('label:hover > .rightCorner');
-        // hide(labelImgs)
-        // leftCorners.style = "display:none";
-        // let checkedElement = document.querySelector(':checked');
-        // function eraseImgs() {
-
-        //     if(checkedElement.checked == true) {
-        //         hide(labelImgs);
-        //         console.log('jnjn')
-        //     }
-        // }
-        // document.querySelector('#skills').addEventListener('click', eraseImgs); 
         function changeBackg() {
 
             checkedElement = document.querySelector('#skills :checked');
@@ -339,7 +304,6 @@
             navBar.style = "background-color: #0A100D";
         }
         // NAVBAR
-        // let projectsBtn = document.querySelector("body > header > nav > ul > div > li.projects");
         scrollTop = document.documentElement.scrollTop;
         let hamburger = document.querySelector("#checkbox_toggle");
         function rollUp() {
@@ -354,5 +318,4 @@
         }
     </script>
 </body>
-
 </html>
