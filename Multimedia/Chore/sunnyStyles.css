@@ -373,9 +373,9 @@ h1 {
     }
 }
 @media screen and (max-width:600px) {
-body  {
+/* body  {
     min-width: 105vw;
-}
+} */
 .pc {
     display: none;
 }
