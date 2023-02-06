@@ -375,7 +375,8 @@ h1 {
 }
 @media screen and (max-width:600px) {
 body  {
-    min-width: 105vw;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .pc {
     display: none;
@@ -431,11 +432,10 @@ h1 {
     display: block;
     position: absolute;
     z-index: -1;
-    scale:2.5;
-    top:max(60px,70vw);
-    left:90vw;
+    scale:2.9;
+    top:max(60px,60vw);
+    left:80vw;
     /* margin: 35% auto 0; */
-    display:none;
 }
 #cont, #cont:hover {
     background-color: var(--the-yellow);
@@ -472,10 +472,10 @@ h1 {
 #check:checked ~ #responsiveMenu{
     display: block;
 }
-#fourthPart{
+#secondPart {
     flex-direction: column-reverse;
 }
-#secondPart, #thirdPart, #fifthPart {
+#thirdPart, #fourthPart, #fifthPart {
     flex-direction: column;
 }
 img, #fourthPart img {
@@ -485,7 +485,7 @@ img, #fourthPart img {
     width: 100vw;
 }
 .text_corner {
-    height:80vh;
+    height:70vh;
     text-align: center;
 }
 .text_corner > * {
