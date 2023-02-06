@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="multimedia-CV/Chore/stylesCV.css">
+    <link rel="icon" type="image/x-icon" href="multimedia-CV/favicon-J.png" width="1000%">
+    <title>Jeanne Ayzatova</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <img id="logo" src="multimedia-CV/logo-jeanne.svg" alt="logo-Jeanne-Ayzatova">
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" onclick="rollUp()" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="#part2">Parcours</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <section id="part1">
+            <h1>Développeuse full-stack junior </h1>
+            <p>CSS, HTML, JS, PHP... frameworks tels que React ou Angular ainsi que les logiciels PAO sont les outils
+                avec lesquels je travaille, dans le but de créer des interfaces web et mobile, qui tiennent compte
+                du référencement, de l'accessibilité et de la maintenabilité côté client. </p>
+            <p>Fin 2021, j'ai découvert le développement et commencé à me spécialiser dans la création digitale de
+                manière intensive.<br><b><a href="https://github.com/JannaAyz" target="_blank" style="user-select: pointer;">Visiter mon github.</a></b></p> 
+            <p>J'aime oeuvrer dans la création d'interfaces adaptables, intuitives, intelligentes de part leur code et
+                leur design, en m'améliorant constamment dans la proposition de solutions informatiques face à des
+                enjeux différents. </p>
+        </section>
+    </header>
+    <!-- fleurs ici -->
+    <div id="flowersBckg">
+        <section id="part2">
+            <div id="book">
+                <div id="visible">
+                    <h2>Etudes et formations</h2>
+                    <h3 class="descriptionCV1 delay1">Développement Web et Mobile, Konexio, Paris</h3>
+                    <p class="descriptionCV2 delay2">ovembre 2022 - Présent・4 mois<br>
+                        Equivalent BAC+2.<br>
+                        Création et intégration front et back end de sites et interfaces
+                        statiques et dynamiques. Référencement, accessibilité.
+                    </p>
+                    <h3 class="descriptionCV3 delay3">Formation Webdesigner, La Manu, Versailles</h3>
+                    <p class="descriptionCV4 delay4">Février 2022 - Mai 2022・4 mois<br>
+                        Diplôme BAC+2 obtenue obtenu. Stage en entreprise inclus.
+                        Conception UX et UI, intégration code et CMS, suite Adobe.</p>
+                    <h3 class="descriptionCV5 delay5">Master 2 Etudes Japonaises, Paris Diderot</h3>
+                    <p class="descriptionCV6 delay6">2015 - 2020・5 ans<br>
+                        Etude de la langue et de la société japonaise. Parcours
+                        professionnalisant dont une année d'échange à <em>Tokyo University of
+                        Foreign Studies</em> : études linguistiques, sociétales, historiques et
+                        cours d'interprétation anglais-japonais.
+                    </p>
+                    <h3 class="descriptionCV7 delay7">Diplôme des Métiers d'Arts, ENSAAMA, Paris</h3>
+                    <p class="descriptionCV8 delay8">2012 - 2015・3 ans<br>
+                        Décoration de surfaces option "laque", avec stage d'un mois dans
+                        un atelier au Japon, pour apprendre la laque japonaise - <em>urushi</em>.
+                    </p>
+                </div>
+                <div id="visible2">
+                    <h2>Expériences professionnelles</h2>
+                    <h3 class="descriptionCV1 delay1">Cours de langues et travail dans l'événementiel, Paris</h3>
+                    <p class="descriptionCV2 delay2">Juillet 2020 - Février 2022・1 an 8 mois<br>
+                        Soutien scolaire en japonais, russe, français pour des particuliers.
+                        Interprétation auprès des membres des délégations en anglais et
+                        russe, pour l'agence <em>Uliss</em>.
+                    </p>
+                    <h3 class="descriptionCV3 delay3">Assistante de direction trilingue, Kubota Europe, Argenteuil</h3>
+                    <p class="descriptionCV4 delay4">Janvier 2019 - Août 2020 ・7 mois <br>
+                        Japonais, Anglais, Français oral et écrit. Assistante du président,
+                        communication interne, agenda. Accompagnement administratif
+                        des expatriés (80 personnes).
+                    </p>
+                    <h3 class="descriptionCV5 delay5">Staff dans l'événementiel, Pacific Service & YSC STAFF, Tokyo</h3>
+                    <p class="descriptionCV6 delay6">Eté 2019・2,5 mois<br>
+                        Vente dans la restauration, préparation d'événements en plein air,
+                        services lors de cérémonies, pratique des "coutumes
+                        professionnelles" japonaises, adaptation aux cadres variés.</p>
+                    <h3 class="descriptionCV7 delay7">Interprète, Maison France-Tatarstan (région russe), Paris</h3>
+                    <p class="descriptionCV8 delay8">2015 - 2017・2 ans<br>
+                        Organisation d'événements de grande échelle : concerts, voyages,
+                        etc. par différentes délégations russes à Paris. Interprétation.</p>
+                </div>
+                <a href="#flowersBckg" class="turnPageButton">
+                    <img src="multimedia-CV/arrowNext.svg" alt="arrow-next" id="next" onclick="nextPageCall()">
+                    <img src="multimedia-CV/arrowPrevious.svg" alt="arrow-previous" id="previous"
+                        onclick="previousPage()">
+                </a>
+            </div>
+        </section>
+        <section id="part3">
+            <div id="skills">
+                <input class="radioBtns" type="radio" id="cercleI" onchange="changeBackg()">
+                <div class="skills_dev_txts">
+                    <a class="closeButton" onclick=changeBackgBack()>X</a>
+                    <h2 class="yellowUnderline">Informatique</h2>
+                    <p><b>Langages : </b>HTML, CSS, JavaScript, PHP, mySQL.<br><br>
+                        <b>Bibliothèques : </b>React JS, Node JS, Symfony, Bootstrap.<br><br>
+                        <b>Suite Adobe : </b>Ps, Ai, Xd, Ae, Id.<br><br>
+                        <b>Bureautique : </b>MS Office, Google suite.<br><br>
+                        <b>CMS : </b>Wordpress.
+                    </p>
+                </div>
+                <label for="cercleI" id="dev">
+                    <img class="leftCorner" src="multimedia-CV\open-tag.png" alt="">
+                    <img class="middle" src="multimedia-CV\slash.png" alt="" style="width:4%;">
+                    <img class="rightCorner" src="multimedia-CV\close-tag.png" alt="">
+                    <svg class="cercles" id="cercle1" height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="0" fill="#939F5C" />
+                    </svg>
+                </label>
+                <input class="radioBtns" type="radio" id="cercleII" onchange="changeBackg()">
+                <div class="skills_dev_txts">
+                    <a class="closeButton" onclick=changeBackgBack()>X</a>
+                    <h2 class="greenUnderline">Projets</h2>
+                    <p><b>Logiciel de recherche d'emlpoi : </b>travail en équipe d'apprenti développeurs sur un logiciel
+                        accessible aux personnes non familières avec l'informatique, leur permettant de trouver un
+                        emploi rapidement.<br>Front-end et maquettage du logiciel. Méthode agile.<br><br>
+                        <b>Webdesign mai 2022 : </b>création de maquettes
+                        interactives pour le site web d'un architecte
+                        paysagiste sur Adobe Xd.
+                    </p>
+                </div>
+                <label for="cercleII" id="exp">
+                    <img id="points" class="middle" src="multimedia-CV\points-jp.png" alt="">
+                    <svg class="cercles" id="cercle2" height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="0" fill="#FFBA49" />
+                    </svg>
+                </label>
+                <input class="radioBtns" type="radio" id="cercleIII" onchange="changeBackg()">
+                <div class="skills_dev_txts">
+                    <a class="closeButton" onclick=changeBackgBack()>X</a>
+                    <h2 class="lang yellowUnderline">Langues</h2>
+                    <p><b>Français : </b>langue maternelle.<br><br>
+                        <b>Russe : </b>langue maternelle.<br><br>
+                        <b>Anglais : </b>courant, pratiqué.<br><br>
+                        <b>Japonais : </b>niveau professionnel, Master2.<br>
+                    </p>
+                </div>
+                <label for="cercleIII" id="languages">
+                    <img class="leftCorner jp_fr_skills" src="multimedia-CV\Jp.png" alt="">
+                    <img class="rightCorner jp_fr_skills" src="multimedia-CV\Fr.png" alt="">
+                    <svg class="cercles" id="cercle3" height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="0" fill="#939F5C" />
+                    </svg>
+                </label>
+                <input class="radioBtns" type="radio" id="cercleVI" onchange="changeBackg()">
+                <div class="skills_dev_txts">
+                    <a class="closeButton" onclick=changeBackgBack()>X</a>
+                    <h2 class="skil greenUnderline">Compétences</h2>
+                    <p><b>Curiosité : </b>veille technologique, curiosité culturelle et linguistique.<br><br>
+                        <b>Rigueur : </b>discipline de la pratique des arts martiaux - ceinture marron de judo, boxe
+                        française. Respect des échéances.<br><br>
+                        <b>Esprit de synthèse : </b>rédactionnelle et synthétisation des objectifs.<br><br>
+                        <b>Fléxibilité : </b>facilité d'adaptation aux nouveaux environnements - expatriation et travail au Japon.<br><br>
+                        <b>Autonomie et travail en groupe : </b>apprentissage en autodidacte, partage des connaissances et esprit d'équipe.
+                    </p>
+                </div>
+                <label for="cercleVI" id="softSk">
+                    <img class="leftCorner jp_fr_skills bigger" src="multimedia-CV\soft.png" alt="">
+                    <img class="rightCorner jp_fr_skills bigger" src="multimedia-CV\skills.png" alt="">
+                    <svg class="cercles" id="cercle4" height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="0" fill="#FFBA49" />
+                    </svg>
+                </label>
+            </div>
+    </div>
+    </section>
+    <footer id="footer">
+        <img id="maneki_neko" src="multimedia-CV\manekiNeko-white.svg" alt="cat-picture-maneki-neko">
+        <div id="txt_footer">
+            <h4>Me contacter</h4><br>
+            <p><span class="bolder">Mail : </span>jeanne.ayz@proton.me</p>
+            <p><span class="bolder">LinkedIn : </span><a href="https://www.linkedin.com/in/jeanne-a-2bbba5198/"
+                    target="_blank">Jeanne Ayzatova</a></p>
+            <p id="noteThat">Chaque visuel est de création personnelle</p>
+        </div>
+    </footer>
+
+    <script>
+        //ON SCROLL
+        const SMALLSCR = window.matchMedia("(max-width: 615px)");
+        window.addEventListener("scroll", function () {
+            const BOOK = document.querySelector("#book");
+            if (window.scrollY >= 350) {
+                BOOK.style = "opacity:1;transition: opacity 250ms ease-in-out;"
+            }
+            if (SMALLSCR.matches) {
+                const NEKO = document.querySelector("#maneki_neko");
+                const TXTFOO = document.querySelector("#txt_footer");
+                const FOO = document.querySelector("#footer");
+                NEKO.classList.toggle("toBottom", window.scrollY >= 1770);
+                TXTFOO.classList.toggle("toLeft", window.scrollY >= 1770);
+                FOO.classList.toggle("moreHeight", window.scrollY >= 1900);
+            }
+        })
+        //General functions
+        function hide(elmnt) {
+            elmnt.style = "display:none;";
+        }
+        function show(elmnt) {
+            elmnt.style.cssText = "display:block;";
+            // }
+        }
+        function scrollDown(elmnt) {
+            elmnt.className += "scdown";
+        }
+        function turnPage(elmnt) {
+            elmnt.className += "turn";
+        }
+        function noClass() {
+            aca.removeAttribute('class');
+            pro.removeAttribute('class');
+        }
+        //Select DOM elements
+        let btnNext = document.getElementById('next'),
+            btnPrev = document.getElementById('previous'),
+            aca = document.getElementById('visible'),
+            pro = document.getElementById('visible2');
+
+        //General function. Texts animated to switch between them
+        function nextPage(firstPage, nxtPage, btnNxt, btnBack) {
+            turnPage(firstPage);
+            setTimeout(() => {
+                setTimeout(hide(firstPage), 200);
+                setTimeout(scrollDown(nxtPage), 10);
+                setTimeout(show(nxtPage), 1800);
+            }, 2000);
+            hide(btnNxt);
+            show(btnBack);
+        }
+        //Call the text animation, from the first to the second one
+        function nextPageCall() {
+            noClass();
+            setTimeout(() => {
+                nextPage(aca, pro, btnNext, btnPrev);
+            }, 10);
+        }
+        //Call the text animation, from the second to the first one
+        function previousPage() {
+            noClass();
+            setTimeout(nextPage(pro, aca, btnPrev, btnNext), 10);
+        }
+        window.addEventListener('scroll', () => {
+            const { scrollTop, clientHeight } = document.documentElement;
+            console.log(scrollTop, clientHeight);
+        });
+        //ANIMATE CERCLES
+        let skillsPart = document.querySelector("#skills"),
+            part2 = document.querySelector("#part2"),
+            part1 = document.querySelector("#part1"),
+            labelImgs = document.querySelectorAll('#skills  label > img'),
+            navBar = document.querySelector("body > header > nav"),
+            labelsToErase = document.querySelectorAll('#skills.blurry  label > img');
+        function changeBackg() {
+
+            checkedElement = document.querySelector('#skills :checked');
+*
+            function coche(callback) {
+                checkedElement.checked = true;
+                setTimeout(callback(), 510);
+                console.log('hello');
+            }
+            function scrollToSkills() {
+                document.querySelector("#skills").scrollIntoView({ behavior: 'auto' });
+            }
+            coche(scrollToSkills);
+
+            setTimeout(() => {
+                hide(navBar);
+                hide(labelImgs);
+                document.querySelector("#skills").classList.add('blurry');
+                part2.style = 'z-index:-1;opacity: .05';
+                coche()
+            }, 520);
+            setTimeout(() => {
+                window.addEventListener('scroll', () => {
+                    const { scrollTop, clientHeight } = document.documentElement;
+                    if (scrollTop <= 2350) { //1380 1850
+                        changeBackgBack();
+                    }
+                })
+            }, 1500);
+        }
+        function changeBackgBack() {
+            part2.style = 'opacity:1';
+            skillsPart.classList.remove('blurry');
+            checkedElement.checked = false;
+            navBar.style = "background-color: #0A100D";
+        }
+        // NAVBAR
+        scrollTop = document.documentElement.scrollTop;
+        let hamburger = document.querySelector("#checkbox_toggle");
+        function rollUp() {
+            if (hamburger.checked == true) {
+                window.addEventListener('scroll', () => {
+                    if (scrollTop += 1) {
+                        hamburger.checked = false;
+                    }
+                });
+                console.log('checked nav');
+            }
+        }
+    </script>
+</body>
+
+</html>
