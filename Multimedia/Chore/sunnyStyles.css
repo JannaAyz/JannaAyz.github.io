@@ -429,7 +429,7 @@ h1 {
     z-index: -1;
     scale:2.9;
     top:max(60px,60vw);
-    left:80vw;
+    left:83vw;
     /* margin: 35% auto 0; */
 }
 #cont, #cont:hover {
