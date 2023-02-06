@@ -435,6 +435,7 @@ h1 {
     top:max(60px,70vw);
     left:90vw;
     /* margin: 35% auto 0; */
+    display:none;
 }
 #cont, #cont:hover {
     background-color: var(--the-yellow);
