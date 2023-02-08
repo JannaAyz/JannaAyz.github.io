@@ -437,6 +437,7 @@ h1 {
     z-index: -1;
     scale:3.5;
     position: absolute;
+    right: 50%;
 }
 #menu {
     position: absolute;
