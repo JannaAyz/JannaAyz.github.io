@@ -437,7 +437,7 @@ h1 {
     z-index: -1;
     scale:3.5;
     position: absolute;
-    transform : translateX(-50%);
+    transform : translateX(-25%);
 }
 #menu {
     position: absolute;
@@ -503,7 +503,7 @@ img, #fourthPart img {
     text-align: center;
 }
 .text_corner > * {
-    width:70vw;
+    width:60vw;
 }
 .text_corner h2 {
     margin-top: 20vw;
@@ -525,7 +525,6 @@ img, #fourthPart img {
 .text_corner a {
     margin-top: 300px;
     font-size: clamp(12px, 4vw, 25px);
-    /* margin: auto ; */
     margin-left: 35%;
 }
 #bckg_cherries, #bckg_clementine {
@@ -543,7 +542,7 @@ img, #fourthPart img {
 #fifthPart {
     height: 80vh;
     margin: 23vw auto;
-    padding-bottom: 20%;
+/*     padding-bottom: 20%; */
     margin-left: -3vw;
 }
 #bckg_cherries > h3, #bckg_clementine > h3 {
