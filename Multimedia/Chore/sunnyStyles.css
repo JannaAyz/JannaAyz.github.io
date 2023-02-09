@@ -504,7 +504,7 @@ img, #fourthPart img {
     text-align: center;
 }
 .text_corner > * {
-    max-width:80vw;
+    width:75vw;
 }
 .text_corner h2 {
     margin-top: 20vw;
@@ -533,12 +533,12 @@ img, #fourthPart img {
 } 
 #bckg_cherries {
     left: 9vw;
-    transform: translateY(30%);
+    transform: translateY(40%);
 }
 #bckg_clementine {
     /* margin-top:-40%; */
     left: 9vw;
-    transform: translateY(-270%);
+    transform: translateY(-40%);
 } 
 #fifthPart {
     height: 70vh;
@@ -595,7 +595,7 @@ footer{
     #menu-bckg {
         display: block;
         z-index: -1;
-        scale:2.6;
+        scale:2.8;
         position: absolute;
     }
     #menu {
