@@ -408,8 +408,8 @@ h1 {
     background-image: url('../mobile/image-header.jpg');
     position: absolute;
     content: '';
-    width: 150vw;
-    margin-left: -3vw;
+    width: 100vw;
+/*     margin-left: -3vw; */
 }
 #hamburger {
     display: block;
@@ -437,7 +437,7 @@ h1 {
     z-index: -1;
     scale:3.5;
     position: absolute;
-    transform : translateX(-15%);
+    transform : translateX(-5%);
 }
 #menu {
     position: absolute;
