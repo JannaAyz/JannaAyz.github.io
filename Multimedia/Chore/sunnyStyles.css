@@ -533,12 +533,12 @@ img, #fourthPart img {
 } 
 #bckg_cherries {
     left: 9vw;
-    transform: translateY(70%);
+    transform: translateY(80%);
 }
 #bckg_clementine {
     /* margin-top:-40%; */
     left: 9vw;
-    transform: translateY(160%);
+    transform: translateY(260%);
 } 
 #fifthPart {
     height: 70vh;
