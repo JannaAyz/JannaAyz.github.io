@@ -437,7 +437,7 @@ h1 {
     z-index: -1;
     scale:3.5;
     position: absolute;
-    transform : translateX(-5%);
+    transform : translateX(-3%);
 }
 #menu {
     position: absolute;
@@ -533,12 +533,12 @@ img, #fourthPart img {
 } 
 #bckg_cherries {
     left: 9vw;
-    transform: translateY(40%);
+    transform: translateY(50%);
 }
 #bckg_clementine {
     /* margin-top:-40%; */
     left: 9vw;
-    transform: translateY(-40%);
+    transform: translateY(60%);
 } 
 #fifthPart {
     height: 70vh;
