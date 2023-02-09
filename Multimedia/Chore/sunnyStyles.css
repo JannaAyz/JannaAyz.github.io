@@ -504,7 +504,7 @@ img, #fourthPart img {
     text-align: center;
 }
 .text_corner > * {
-    width:70vw;
+    max-width:80vw;
 }
 .text_corner h2 {
     margin-top: 20vw;
