@@ -329,6 +329,9 @@ nav #logo {
 #logo {
     scale: 1.5;
 }
+#centered {
+    margin-top: 24vh;
+}
 #menu a {
     font-size: clamp(20px, 3vw, 30px); 
 }
@@ -344,7 +347,8 @@ h1 {
     padding-top: 2%;
 }
 .text_corner p {
-    font-size: clamp(16px, 3vw, 30px);
+    font-size: clamp(16px, 6vw, 40px);
+    width: 35vw;
 }
 .text_corner h2, .text_corner p {
     width: 30vw;
@@ -358,6 +362,15 @@ h1 {
 }
 #fifthPart h2 {
     font-size: clamp(22px, 6vw, 50px);
+}
+#fifthPart {
+    margin-bottom: clamp(40px, 18vw, 170px);
+}
+#bckg_clementine, #bckg_cherries {
+    margin-top: calc(18% + 4vw);
+}
+#bckg_clementine > p, #bckg_cherries > p {
+    font-size: clamp(20px, 4vw, 35px);
 }
 #clientsWrapper p {
     scale: 1.5;
@@ -533,7 +546,7 @@ img, #fourthPart img {
 } 
 #bckg_cherries {
     left: 9vw;
-    transform: translateY(80%);
+    transform: translateY(60%);
 }
 #bckg_clementine {
     /* margin-top:-40%; */
